@@ -9,7 +9,7 @@ class SpindlerBattery(Battery):
         self.current_date = current_date
 
     def ServiceNeeded(self):
-        date_limit_for_service = service_date(self.last_service_date, 2)
+        date_limit_for_service = service_date(self.last_service_date, 3)
         if date_limit_for_service < self.current_date:
             return True
         else:
